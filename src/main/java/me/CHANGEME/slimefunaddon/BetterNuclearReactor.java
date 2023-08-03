@@ -37,7 +37,7 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
          * This class has many constructors, it is very important
          * that you give each item a unique id.
          */
-        SlimefunItemStack slimefunItem = new SlimefunItemStack("COOL_DIAMOND", Material.DIAMOND, "&4Cool Diamond", "&c+20% Coolness");
+        SlimefunItemStack slimefunItem = new SlimefunItemStack("FAN_Y_D_H_X", Material.DIAMOND, "&4&l反应堆核心", "&a这是多方块结构反应堆的核心（必须）");
 
         /*
          * 3. Creating a Recipe
