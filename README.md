@@ -1,6 +1,6 @@
-# Slimefun4 Addon
-This is an example Repository for a generic Slimefun4 Addon.
-In the top left is a button "Use this template", click this to create your own Addon for Slimefun4 using this basic template.
+# 粘液科技附属-更好的核反应堆
+这是一个基于粘液科技开发的一个附属插件，它添加了一个新的多方块结构的核反应堆以及配套物品。
+并且反应堆爆炸会产生地形破坏
 
 ## How to create your own addon.
 This is a template repository that you can use to create your own Slimefun4 Addon.<br>
