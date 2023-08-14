@@ -1,20 +1,15 @@
-# Slimefun4 Addon
-This is an example Repository for a generic Slimefun4 Addon.
-In the top left is a button "Use this template", click this to create your own Addon for Slimefun4 using this basic template.
+# 粘液科技4 附属插件 更好的核反应堆 BetterNuclearReactor
 
-## How to create your own addon.
-This is a template repository that you can use to create your own Slimefun4 Addon.<br>
-We have also written an extensive step-by-step tutorial which you can find here:<br>
-https://github.com/Slimefun/Slimefun4/wiki/Developer-Guide
+这是粘液科技4的附属插件，是为了让核反应堆更真实，其发电量也得到了提升
 
-## Changing some important things
-Navigate to `src/main/java` and rename the package and the .java File to your liking.<br>
-Suggestion: "me.yourname.yourproject" (all lower case) and "ProjectName.java"<br>
-Example: "me.thebusybiscuit.cooladdon" and "CoolAddon.java"
+## 声明
 
-Navigate to `src/main/resources/plugin.yml` and change the "author" and "main" attributes.
-You may also want to change the description to something meaningful.
+使用GNU General Public License v3.0许可证（GNU 通用公共许可证 v3.0）
 
-Navigate to `pom.xml` and change the group id to "me.%Your name%" and change the artifact id to the name of your Project.
+ github：pingguomc  |   mcbbs：pingguo_command
 
-After that you are good to go, you can now start developing your own Addon for Slimefun4.
+上面的都是我，别的都不是
+
+## 使用介绍
+
+暂无

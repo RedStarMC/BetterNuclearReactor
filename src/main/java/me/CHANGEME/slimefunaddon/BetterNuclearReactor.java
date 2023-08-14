@@ -13,7 +13,7 @@ import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
 
-public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
+public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
 
     @Override
     public void onEnable() {
@@ -28,36 +28,36 @@ public class ExampleAddon extends JavaPlugin implements SlimefunAddon {
          * 1. Creating a new Category
          * This Category will use the following ItemStack
          */
-        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&4Addon Category", "", "&a> Click to open");
+        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&4更好的核反应堆", "", "&a> 点击打开");
 
         // Give your Category a unique id.
-        NamespacedKey itemGroupId = new NamespacedKey(this, "addon_category");
-        ItemGroup itemGroup = new ItemGroup(itemGroupId, itemGroupItem);
+        NamespacedKey itemGroupId = new NamespacedKey(this, "xin_he_fan_ying_dui");
+        ItemGroup BNR_Group = new ItemGroup(itemGroupId, itemGroupItem);
 
         /*
-         * 2. Create a new SlimefunItemStack
-         * This class has many constructors, it is very important
-         * that you give each item a unique id.
+         *2。创建新的SlimefunItemStack
+         *这个类有很多构造函数，它非常重要
+         *你给每个项目一个唯一的id。
          */
-        SlimefunItemStack slimefunItem = new SlimefunItemStack("COOL_DIAMOND", Material.DIAMOND, "&4Cool Diamond", "&c+20% Coolness");
+        SlimefunItemStack BNR_lead_plate = new SlimefunItemStack("BNR_LEAD_PLATE", Material.DIAMOND, "&l铅板", "&0防辐射的材料（可制作核反应堆）");
 
         /*
-         * 3. Creating a Recipe
-         * The Recipe is an ItemStack Array with a length of 9.
-         * It represents a Shaped Recipe in a 3x3 crafting grid.
-         * The machine in which this recipe is crafted in is specified
-         * further down as the RecipeType.
+         * 3.创建配方
+         *Recipe是一个长度为9的ItemStack数组。
+         *它代表一个3x3制作网格中的成形配方。
+         *指定了制作此配方的机器
+         *再往下称为RecipeType。
          */
-        ItemStack[] recipe = { new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.DIAMOND), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD) };
+        ItemStack[] recipe = {new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.DIAMOND), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD)};
 
         /*
-         * 4. Registering the Item
-         * Now you just have to register the item.
-         * RecipeType.ENHANCED_CRAFTING_TABLE refers to the machine in
-         * which this item is crafted in.
-         * Recipe Types from Slimefun itself will automatically add the recipe to that machine.
+         *4.正在注册项目
+         *现在您只需要注册该项目。
+         *RecipeType.ENHANCED_CRAFTING_TABLE指的是
+         *这个项目是在其中制作的。
+         *Slimefun本身的配方类型将自动将配方添加到该机器中。
          */
-        SlimefunItem item = new SlimefunItem(itemGroup, slimefunItem, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
+        SlimefunItem item = new SlimefunItem(BNR_Group, BNR_lead_plate, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
         item.register(this);
     }
 
