@@ -1,19 +1,22 @@
 package me.CHANGEME.slimefunaddon;
 
-import org.bukkit.Material;
-import org.bukkit.NamespacedKey;
-import org.bukkit.inventory.ItemStack;
-import org.bukkit.plugin.java.JavaPlugin;
-
-import io.github.thebusybiscuit.slimefun4.api.items.ItemGroup;
+import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
-import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
-import io.github.thebusybiscuit.slimefun4.libraries.dough.items.CustomItemStack;
+
+import static me.CHANGEME.slimefunaddon.Group.Group.Group;
+
+import org.bukkit.Material;
+import org.bukkit.inventory.ItemStack;
+import org.bukkit.plugin.java.JavaPlugin;
 
 public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
+    public static BetterNuclearReactor plugin;
+    public static BetterNuclearReactor getInstance() {
+        return plugin;
+    }
 
     @Override
     public void onEnable() {
@@ -28,18 +31,14 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
          * 1. Creating a new Category
          * This Category will use the following ItemStack
          */
-        ItemStack itemGroupItem = new CustomItemStack(Material.DIAMOND, "&4更好的核反应堆", "", "&a> 点击打开");
-
         // Give your Category a unique id.
-        NamespacedKey itemGroupId = new NamespacedKey(this, "xin_he_fan_ying_dui");
-        ItemGroup BNR_Group = new ItemGroup(itemGroupId, itemGroupItem);
 
         /*
          *2。创建新的SlimefunItemStack
          *这个类有很多构造函数，它非常重要
          *你给每个项目一个唯一的id。
          */
-        SlimefunItemStack BNR_lead_plate = new SlimefunItemStack("BNR_LEAD_PLATE", Material.DIAMOND, "&l铅板", "&0防辐射的材料（可制作核反应堆）");
+        SlimefunItemStack BNR_lead_plate = new SlimefunItemStack("BNR_LEAD_PLATE", Material.DIAMOND, "&l铅板", "&0防辐射的材料/n制作核反应堆的材料");
 
         /*
          * 3.创建配方
@@ -57,13 +56,23 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
          *这个项目是在其中制作的。
          *Slimefun本身的配方类型将自动将配方添加到该机器中。
          */
-        SlimefunItem item = new SlimefunItem(BNR_Group, BNR_lead_plate, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
+        SlimefunItem item = new SlimefunItem(Group, BNR_lead_plate, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
         item.register(this);
+        getLogger().info("------------------------");
+        getLogger().info("| BetterNuclearReactor |");
+        getLogger().info("| 作者: pingguomc       |");
+        getLogger().info("|       插件加载成功      |");
+        getLogger().info("------------------------");
+
     }
 
     @Override
     public void onDisable() {
-        // Logic for disabling the plugin...
+        getLogger().info("------------------------");
+        getLogger().info("| BetterNuclearReactor |");
+        getLogger().info("| 作者: pingguomc       |");
+        getLogger().info("|       插件卸载成功      |");
+        getLogger().info("------------------------");
     }
 
     @Override

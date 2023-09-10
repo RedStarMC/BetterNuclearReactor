@@ -2,10 +2,10 @@
 name: BetterNuclearReactor
 
 ## CHANGE this to your username.
-author: pingguo
+author: pingguomc
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: A generic Slimefun4-Addon
+description: 这是粘液科技4的附属插件，是为了让核反应堆更真实
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
 main: me.CHANGEME.slimefunaddon.BetterNuclearReactor
