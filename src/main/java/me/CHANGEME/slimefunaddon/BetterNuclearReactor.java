@@ -8,6 +8,11 @@ import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 
 import static me.CHANGEME.slimefunaddon.Group.Group.Group;
 
+import me.CHANGEME.slimefunaddon.Items.ControlBar;
+import me.CHANGEME.slimefunaddon.Items.LeadBar;
+import me.CHANGEME.slimefunaddon.Items.LeadCasing;
+import me.CHANGEME.slimefunaddon.Items.NuclearReactor;
+
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -59,7 +64,10 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
         getLogger().info("| 作者: pingguomc      |");
         getLogger().info("|       插件加载成功    |");
         getLogger().info("------------------------");
-
+        LeadBar.reg();
+        ControlBar.reg2();
+        LeadCasing.reg3();
+        NuclearReactor.reg4();
     }
 
     @Override

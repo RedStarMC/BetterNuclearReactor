@@ -9,12 +9,11 @@ import org.bukkit.inventory.ItemStack;
 
 import static me.CHANGEME.slimefunaddon.Group.Group.Group;
 
-public class LeadBar{
+public class ControlBar {
     static ItemStack[] recipe = {new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.DIAMOND), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD)};
-    static SlimefunItemStack BNR_lead_bar = new SlimefunItemStack("BNR_LEAD_BAR", Material.STICK, "&l铅棒", "吸收中子的材料/n制作核反应堆控制棒的材料");
-    static SlimefunItem lead_bar = new SlimefunItem(Group, BNR_lead_bar, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
-    public static void reg(){
-        lead_bar.register((BetterNuclearReactor.getPlugin(BetterNuclearReactor.class)));
+    static SlimefunItemStack BNR_control_bar = new SlimefunItemStack("BNR_3", Material.STICK, "&l控制棒", "可以吸收中子的棒","制作核反应堆控制棒的材料");
+    static SlimefunItem control_bar = new SlimefunItem(Group, BNR_control_bar, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
+    public static void reg2(){
+        control_bar.register((BetterNuclearReactor.getPlugin(BetterNuclearReactor.class)));
     }
-
 }
