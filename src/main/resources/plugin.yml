@@ -5,7 +5,7 @@ name: BetterNuclearReactor
 author: pingguomc
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: 这是粘液科技4的附属插件，是为了让核反应堆更真实
+description: a
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
 main: me.CHANGEME.slimefunaddon.BetterNuclearReactor

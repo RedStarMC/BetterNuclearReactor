@@ -13,10 +13,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
-    public static BetterNuclearReactor plugin;
-    public static BetterNuclearReactor getInstance() {
-        return plugin;
-    }
 
     @Override
     public void onEnable() {
@@ -60,8 +56,8 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
         item.register(this);
         getLogger().info("------------------------");
         getLogger().info("| BetterNuclearReactor |");
-        getLogger().info("| 作者: pingguomc       |");
-        getLogger().info("|       插件加载成功      |");
+        getLogger().info("| 作者: pingguomc      |");
+        getLogger().info("|       插件加载成功    |");
         getLogger().info("------------------------");
 
     }
@@ -70,8 +66,8 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
     public void onDisable() {
         getLogger().info("------------------------");
         getLogger().info("| BetterNuclearReactor |");
-        getLogger().info("| 作者: pingguomc       |");
-        getLogger().info("|       插件卸载成功      |");
+        getLogger().info("| 作者: pingguomc      |");
+        getLogger().info("|       插件卸载成功    |");
         getLogger().info("------------------------");
     }
 
