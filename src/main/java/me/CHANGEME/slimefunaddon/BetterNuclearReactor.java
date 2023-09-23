@@ -13,6 +13,7 @@ import me.CHANGEME.slimefunaddon.Items.ControlBar;
 import me.CHANGEME.slimefunaddon.Items.LeadBar;
 import me.CHANGEME.slimefunaddon.Items.LeadCasing;
 import me.CHANGEME.slimefunaddon.Items.NuclearReactor;
+import me.CHANGEME.slimefunaddon.Items.Waste;
 
 import org.bukkit.Material;
 import org.bukkit.inventory.ItemStack;
@@ -40,7 +41,7 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
          *这个类有很多构造函数，它非常重要
          *你给每个项目一个唯一的id。
          */
-        SlimefunItemStack BNR_lead_plate = new SlimefunItemStack("BNR_LEAD_PLATE", Material.DIAMOND, "&l铅板", "&0防辐射的材料/n制作核反应堆的材料");
+        SlimefunItemStack BNR_lead_plate = new SlimefunItemStack("BNR_LEAD_PLATE", Material.DIAMOND, "&l&7铅板", "","&5用于制作铅制机壳");
 
         /*
          * 3.创建配方
@@ -65,12 +66,13 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
         getLogger().info("------------------------");
         getLogger().info("| BetterNuclearReactor |");
         getLogger().info("| 作者: pingguomc      |");
-        getLogger().info("|       插件加载成功    |");
+        getLogger().info("|       插件加载成功   |");
         getLogger().info("------------------------");
         LeadBar.reg();
         ControlBar.reg2();
         LeadCasing.reg3();
         NuclearReactor.reg4();
+        Waste.reg6();
     }
 
     @Override

@@ -5,7 +5,7 @@ name: BetterNuclearReactor
 author: pingguomc
 
 ## CHANGE this to a meaninful but short description of your plugin.
-description: a
+description: a slimefun addon
 
 ## CHANGE this to the path of the class that extends JavaPlugin.
 main: me.CHANGEME.slimefunaddon.BetterNuclearReactor
