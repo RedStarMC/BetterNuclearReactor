@@ -4,6 +4,7 @@ import io.github.thebusybiscuit.slimefun4.api.SlimefunAddon;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItem;
 import io.github.thebusybiscuit.slimefun4.api.items.SlimefunItemStack;
 import io.github.thebusybiscuit.slimefun4.api.recipes.RecipeType;
+import io.github.thebusybiscuit.slimefun4.implementation.SlimefunItems;
 import io.github.thebusybiscuit.slimefun4.libraries.dough.config.Config;
 
 import static me.CHANGEME.slimefunaddon.Group.Group.Group;
@@ -48,7 +49,9 @@ public class BetterNuclearReactor extends JavaPlugin implements SlimefunAddon {
          *指定了制作此配方的机器
          *再往下称为RecipeType。
          */
-        ItemStack[] recipe = {new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.DIAMOND), null, new ItemStack(Material.EMERALD), null, new ItemStack(Material.EMERALD)};
+        ItemStack[] recipe = {SlimefunItems.LEAD_INGOT,SlimefunItems.LEAD_INGOT,SlimefunItems.LEAD_INGOT,
+                              SlimefunItems.LEAD_INGOT,null,SlimefunItems.LEAD_INGOT,
+                              SlimefunItems.LEAD_INGOT,SlimefunItems.LEAD_INGOT,SlimefunItems.LEAD_INGOT};
 
         /*
          *4.正在注册项目
