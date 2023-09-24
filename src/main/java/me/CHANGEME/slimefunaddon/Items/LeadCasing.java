@@ -10,9 +10,9 @@ import org.bukkit.inventory.ItemStack;
 import static me.CHANGEME.slimefunaddon.Group.Group.Group;
 
 public class LeadCasing {
-    static ItemStack[] recipe = {null,null,null,
-                                null,null,null,
-                                null,null,null};
+    static ItemStack[] recipe = {LeadPlate.BNR_lead_plate,LeadBar.BNR_lead_bar,LeadPlate.BNR_lead_plate,
+                                LeadBar.BNR_lead_bar,null,LeadBar.BNR_lead_bar,
+                                LeadPlate.BNR_lead_plate,LeadBar.BNR_lead_bar,LeadPlate.BNR_lead_plate};
     static SlimefunItemStack BNR_lead_casing= new SlimefunItemStack("BNR_4", Material.IRON_BLOCK, "&8铅制机壳", "","&5制作核反应堆的材料");
     static SlimefunItem lead_casing = new SlimefunItem(Group, BNR_lead_casing, RecipeType.ENHANCED_CRAFTING_TABLE, recipe);
     public static void reg3(){
